@@ -1,0 +1,50 @@
+{C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/beta/top_level.v} {1 {vlog -work work -stats=none {C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/beta/top_level.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module top_equalizer
+
+Top level modules:
+	top_equalizer
+
+} {} {}} {C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/beta/band_filter.v} {1 {vlog -work work -stats=none {C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/beta/band_filter.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module bandpass_filter
+
+Top level modules:
+	bandpass_filter
+
+} {} {}} {C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/beta/flattening_gain_control.v} {1 {vlog -work work -stats=none {C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/beta/flattening_gain_control.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module flatten_agc
+
+Top level modules:
+	flatten_agc
+
+} {} {}} {C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/beta/averaging_gain_control.v} {1 {vlog -work work -stats=none {C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/beta/averaging_gain_control.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module agc
+
+Top level modules:
+	agc
+
+} {} {}} {C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/beta/adaptive_equalizer.v} {1 {vlog -work work -stats=none {C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/beta/adaptive_equalizer.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module adaptive_equalizer
+
+Top level modules:
+	adaptive_equalizer
+
+} {} {}} {C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/beta/noise_filter.v} {1 {vlog -work work -stats=none {C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/beta/noise_filter.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module noise_filter
+
+Top level modules:
+	noise_filter
+
+} {} {}} {C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/beta/volume_control.v} {1 {vlog -work work -stats=none {C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/beta/volume_control.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module volume_control
+
+Top level modules:
+	volume_control
+
+} {} {}}

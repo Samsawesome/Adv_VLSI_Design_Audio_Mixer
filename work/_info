@@ -1,0 +1,220 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/18.1
+vadaptive_equalizer
+Z0 !s110 1777422674
+!i10b 1
+!s100 CgSh<gFGmWVjaAffaI6Z;2
+I@RR97c;QV<FHYGzT]CCJP2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer
+w1777231381
+8C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/adaptive_equalizer.v
+FC:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/adaptive_equalizer.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1777422673.000000
+!s107 C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/adaptive_equalizer.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/adaptive_equalizer.v|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+vagc
+!s110 1777422338
+!i10b 1
+!s100 NTC_JPGm3iXiaMQfNPc6@1
+I><9JWFP9gMGFEIAIACIiK3
+R1
+R2
+w1777422265
+Z6 8C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/averaging_gain_control.v
+Z7 FC:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/averaging_gain_control.v
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1777422338.000000
+Z8 !s107 C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/averaging_gain_control.v|
+Z9 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/averaging_gain_control.v|
+!i113 1
+R4
+R5
+vaudio_testbench
+!s110 1776271342
+!i10b 1
+!s100 ;BX@al6T^:0HUYV6oU2na1
+I]SGFCCjUdMNZOk[FUT1Nd0
+R1
+R2
+w1776271340
+8C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/basic_testbench.v
+FC:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/basic_testbench.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1776271342.000000
+!s107 C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/basic_testbench.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/basic_testbench.v|
+!i113 1
+R4
+R5
+vavg_agc
+R0
+!i10b 1
+!s100 cHn5zE:G`HB4>Ukf]NLj60
+IRAVAajfZlJ3a;>`0R?0hN2
+R1
+R2
+w1777422457
+R6
+R7
+L0 2
+R3
+r1
+!s85 0
+31
+Z10 !s108 1777422674.000000
+R8
+R9
+!i113 1
+R4
+R5
+vbandpass_filter
+R0
+!i10b 1
+!s100 D9dR=AXHCCMnQP]3o_ME60
+Ih8`Ybh4_RodI6Qd47bmQQ3
+R1
+R2
+w1777422536
+8C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/band_filter.v
+FC:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/band_filter.v
+L0 1
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/band_filter.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/band_filter.v|
+!i113 1
+R4
+R5
+vflatten_agc
+R0
+!i10b 1
+!s100 KFzRSZCacjWT[WZlnAOKN2
+I0zWD3ZXcGF7IU^h`K9A]N3
+R1
+R2
+w1777422670
+8C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/flattening_gain_control.v
+FC:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/flattening_gain_control.v
+L0 133
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/flattening_gain_control.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/flattening_gain_control.v|
+!i113 1
+R4
+R5
+vnoise_filter
+R0
+!i10b 1
+!s100 ]39CPd0gRl3]?8c`GXK[P0
+IHbZT3DeBSAza_0_G7<gd10
+R1
+R2
+w1777421988
+8C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/noise_filter.v
+FC:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/noise_filter.v
+L0 1
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/noise_filter.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/noise_filter.v|
+!i113 1
+R4
+R5
+vtb_top_equalizer
+R0
+!i10b 1
+!s100 DXZIg=G<nP7b8WCV4a21D1
+IJ5n0`TV;BeMZ_];j^49?>0
+R1
+R2
+w1777421793
+8C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/testbench.v
+FC:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/testbench.v
+L0 2
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/testbench.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/testbench.v|
+!i113 1
+R4
+R5
+vtop_equalizer
+R0
+!i10b 1
+!s100 ^LXgebeIg8Xc?56I[I?:d2
+IBI>H[e@4<100YdjMK4dSR0
+R1
+R2
+w1777421931
+8C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/top_level.v
+FC:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/top_level.v
+L0 2
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/top_level.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/top_level.v|
+!i113 1
+R4
+R5
+vvolume_control
+R0
+!i10b 1
+!s100 g@:T079mRI:RF63UgkBKg3
+IXh0OO5TnRfUVTo3gIlk063
+R1
+R2
+w1777422164
+8C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/volume_control.v
+FC:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/volume_control.v
+L0 1
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/volume_control.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/samsa/OneDrive/Desktop/Advance VLSI Design/Audio Mixer/volume_control.v|
+!i113 1
+R4
+R5
