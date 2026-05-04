@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 module tb_top_equalizer;
     reg clk;
-    reg rst_n;
+    reg reset;
     reg sample_valid;
     reg [15:0] sample_in;
     reg [15:0] desired_in;
@@ -17,7 +17,7 @@ module tb_top_equalizer;
 
     top_equalizer dut (
         .clk          (clk),
-        .rst_n        (rst_n),
+        .reset        (reset),
         .sample_valid (sample_valid),
         .sample_in    (sample_in),
         .desired_in(desired_in),
@@ -31,32 +31,32 @@ module tb_top_equalizer;
 
     initial begin
         clk = 0;
-        rst_n = 1;
+        reset = 1;
         sample_valid = 0;
         sample_in = 0;
         sample_count = 0;
         out_count = 0;
         last_report = 0;
 
-        infile = $fopen("input.hex", "r");
+        infile = $fopen("Data/input.hex", "r");
         if (infile == 0) begin
             $display("ERROR: input.hex not found");
             $finish;
         end
 
-        referencefile = $fopen("reference_input.hex", "r");
+        referencefile = $fopen("Data/reference_input.hex", "r");
         if (referencefile == 0) begin
             $display("ERROR: reference.hex not found");
             $finish;
         end
 
-        outfile = $fopen("output.hex", "w");
+        outfile = $fopen("Data/output.hex", "w");
         if (outfile == 0) begin
             $display("ERROR: cannot create output.hex");
             $finish;
         end
 
-        #100 rst_n = 0;
+        #100 reset = 0;
         @(posedge clk);
 
         $display("=== Starting simulation ===");

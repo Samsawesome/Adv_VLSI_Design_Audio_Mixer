@@ -9,7 +9,7 @@ module avg_agc #(
     parameter LIMIT_RELEASE= 7
 ) (
     input wire clk, 
-    input wire rst_n,
+    input wire reset,
     input wire in_valid,
     input wire signed [DATA_WIDTH-1:0] in_data,
     output reg out_valid,
@@ -47,8 +47,8 @@ module avg_agc #(
         end
     endfunction
 
-    always @(posedge clk or posedge rst_n) begin
-        if (rst_n) begin
+    always @(posedge clk or posedge reset) begin
+        if (reset) begin
             ms_q <= 0;
             rms <= 0;
             rms_corrected <= 0;

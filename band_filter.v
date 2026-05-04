@@ -1,10 +1,10 @@
 module bandpass_filter #(
     parameter DATA_WIDTH = 16,
     parameter TAPS       = 64,
-    parameter COEFF_FILE = "bandpass_coeff.hex"
+    parameter COEFF_FILE = "Data/bandpass_coeff.hex"
 ) (
     input wire clk, 
-    input wire rst_n,
+    input wire reset,
     input wire in_valid,
     input wire [DATA_WIDTH-1:0] in_data,
     output reg out_valid,
@@ -21,8 +21,8 @@ module bandpass_filter #(
         $readmemh(COEFF_FILE, coeff);
     end
 
-    always @(posedge clk or posedge rst_n) begin
-        if (rst_n) begin
+    always @(posedge clk or posedge reset) begin
+        if (reset) begin
             for (i = 0; i < TAPS; i = i+1) 
                 delay_line[i] <= 0;
             valid_cnt <= 0;

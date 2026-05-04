@@ -65,7 +65,7 @@ def save_hex(signal, filename):
             val = int(sample) & 0xFFFF #convert to unsigned
             f.write(f"{val:04X}\n")
 
-save_hex(main_input, "main_input.hex")
-save_hex(reference_input, "reference_input.hex")
+save_hex(main_input, "Data/main_input.hex")
+save_hex(reference_input, "Data/reference_input.hex")
 
-print("Files generated: main_input.hex (distorted) and reference_input.hex (clean reference)")
+print("Files generated: Data/main_input.hex (distorted) and Data/reference_input.hex (clean reference)")

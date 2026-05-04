@@ -3,7 +3,7 @@ module adaptive_equalizer #(
     parameter TAP_COUNT = 64,
     parameter STEP = 2
 )(
-    input  wire clk, rst_n,
+    input  wire clk, reset,
     input  wire in_valid,
     input  wire signed [DATA_WIDTH-1:0] distorted_in,
     input  wire signed [DATA_WIDTH-1:0] desired_in,
@@ -27,8 +27,8 @@ module adaptive_equalizer #(
         filtered = acc;
     end
 
-    always @(posedge clk or posedge rst_n) begin
-        if (rst_n) begin
+    always @(posedge clk or posedge reset) begin
+        if (reset) begin
             for (i = 0; i < TAP_COUNT; i = i+1) coeffs[i] <= 0;
             for (i = 0; i < TAP_COUNT; i = i+1) delay[i] <= 0;
             out_valid <= 0;

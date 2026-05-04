@@ -2,7 +2,7 @@ module volume_control #(
     parameter DATA_WIDTH = 16
 ) (
     input wire clk, 
-    input wire rst_n,
+    input wire reset,
     input wire in_valid,
     input wire signed [DATA_WIDTH-1:0] in_data,
     input wire [7:0] desired_volume,
@@ -16,8 +16,8 @@ module volume_control #(
 
     reg signed [31:0] product;
 
-    always @(posedge clk or posedge rst_n) begin
-        if (rst_n) begin
+    always @(posedge clk or posedge reset) begin
+        if (reset) begin
             out_valid <= 0;
             out_data  <= 0;
         end else begin

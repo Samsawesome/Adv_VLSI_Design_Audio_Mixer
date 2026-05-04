@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 module top_equalizer (
     input wire clk,
-    input wire rst_n,
+    input wire reset,
     input wire sample_valid,
     input wire [15:0] sample_in,
     input wire [15:0] desired_in,
@@ -32,7 +32,7 @@ module top_equalizer (
         .TAP_COUNT (15)
     ) u_noise_filter (
         .clk         (clk),
-        .rst_n       (rst_n),
+        .reset       (reset),
         .in_valid    (sample_valid),
         .in_data     (sample_in),
         .out_valid   (stage1_valid),
@@ -41,10 +41,10 @@ module top_equalizer (
     //then remove uneccisary high or low frequency signals
     bandpass_filter #(
         .DATA_WIDTH (16),
-        .COEFF_FILE ("bandpass_coeff.hex")
+        .COEFF_FILE ("Data/bandpass_coeff.hex")
     ) u_bandpass (
         .clk         (clk),
-        .rst_n       (rst_n),
+        .reset       (reset),
         .in_valid    (stage1_valid),
         .in_data     (stage1_data),
         .out_valid   (stage2_valid),
@@ -56,7 +56,7 @@ module top_equalizer (
         .TAP_COUNT(64)
     ) u_equalizer (
         .clk(clk),
-        .rst_n(rst_n),
+        .reset(reset),
         .in_valid(stage2_valid),
         .distorted_in(stage2_data),
         .desired_in(desired_in),
@@ -69,7 +69,7 @@ module top_equalizer (
         .TAP_COUNT (15)
     ) u_noise_filter_2 (
         .clk         (clk),
-        .rst_n       (rst_n),
+        .reset       (reset),
         .in_valid    (stage3_valid),
         .in_data     (stage3_data),
         .out_valid   (stage4_valid),
@@ -80,7 +80,7 @@ module top_equalizer (
         .DATA_WIDTH   (16)
     ) u_agc_2 (
         .clk         (clk),
-        .rst_n       (rst_n),
+        .reset       (reset),
         .in_valid    (stage4_valid),
         .in_data     (stage4_data),
         .out_valid   (stage5_valid),
@@ -92,7 +92,7 @@ module top_equalizer (
         .PEAK_THRESH  (16'd500)
     ) u_agc (
         .clk         (clk),
-        .rst_n       (rst_n),
+        .reset       (reset),
         .in_valid    (stage5_valid),
         .in_data     (stage5_data),
         .out_valid   (stage6_valid),
@@ -104,7 +104,7 @@ module top_equalizer (
         .TAP_COUNT (15)
     ) u_noise_filter_3 (
         .clk         (clk),
-        .rst_n       (rst_n),
+        .reset       (reset),
         .in_valid    (stage6_valid),
         .in_data     (stage6_data),
         .out_valid   (stage7_valid),
@@ -115,7 +115,7 @@ module top_equalizer (
         .DATA_WIDTH(16)
     ) u_volume (
         .clk         (clk),
-        .rst_n       (rst_n),
+        .reset       (reset),
         .in_valid    (stage7_valid),
         .in_data     (stage7_data),
         .desired_volume(desired_volume),

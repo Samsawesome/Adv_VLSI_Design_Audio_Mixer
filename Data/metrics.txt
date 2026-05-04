@@ -1,0 +1,7 @@
+Audio Mixer Performance Metrics
+===============================
+Correlation with reference: 0.879639
+RMSE:                    12434.65 LSB
+NMSE:                    0.530253
+SNR (ref vs residual):   2.76 dB
+(Values computed after 0.5 s transient, 48 kHz sample rate)

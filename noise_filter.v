@@ -3,7 +3,7 @@ module noise_filter #(
     parameter TAP_COUNT  = 15
 ) (
     input wire clk, 
-    input wire rst_n,
+    input wire reset,
     input wire in_valid,
     input wire signed [DATA_WIDTH-1:0] in_data,
     output reg out_valid,
@@ -15,8 +15,8 @@ module noise_filter #(
     reg signed [DATA_WIDTH*2-1:0] summer;
     integer i;
 
-    always @(posedge clk or posedge rst_n) begin
-        if (rst_n) begin
+    always @(posedge clk or posedge reset) begin
+        if (reset) begin
             for (i = 0; i < TAP_COUNT; i = i+1)
                 shift_reg[i] <= 0;
             summer <= 0;
